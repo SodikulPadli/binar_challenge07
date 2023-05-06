@@ -4,19 +4,22 @@ import IconComplete from '../../assets/img/icon_complete.png'
 import Icon24hrs from '../../assets/img/icon_24hrs.png'
 import IconPrice from '../../assets/img/icon_price.png'
 import IconProfesional from '../../assets/img/icon_professional.png'
+import Header from '../../components/Header/Index'
+import Footer from '../../components/Footer/Index'
 
 export default function WhyUs() {
   return (
       <>
-        <Container className='py-lg-5'>
-              <Row className='pt-lg-5'>
-                  <Col className='text-center text-md-start'>
+          <Header/>
+        <Container fluid className='py-lg-5 px-lg-5'>
+              <Row>
+                  <Col>
                     <h3 className="fw-bold">Why Us?</h3>
-                    <p className="py-3">Mengapa harus pilih Binar Car Rental?</p>
+                      <p className="py-3">Mengapa harus pilih Binar Car Rental?</p>
                   </Col>
               </Row> 
-              <Row>
-                  <Col className='pb-2'>
+             <Row >
+                  <Col lg={3} className='pb-2 '>
                       <Card>
                           <Card.Body>
                             <div className="py-2">
@@ -31,7 +34,7 @@ export default function WhyUs() {
                           </Card.Body>
                       </Card>
                   </Col>
-                  <Col className='pb-2'>
+                  <Col lg={3} className='pb-2 '>
                       <Card>
                           <Card.Body>
                             <div className="py-2">
@@ -46,7 +49,7 @@ export default function WhyUs() {
                           </Card.Body>
                       </Card>
                   </Col>
-                  <Col className='pb-2'>
+                  <Col lg={3} className='pb-2 '>
                       <Card>
                           <Card.Body>
                             <div className="py-2">
@@ -61,7 +64,7 @@ export default function WhyUs() {
                           </Card.Body>
                       </Card>
                   </Col>
-                  <Col className='pb-2'>
+                  <Col lg={3} className='pb-2 '>
                       <Card>
                           <Card.Body>
                             <div className="py-2">
@@ -77,7 +80,8 @@ export default function WhyUs() {
                       </Card>
                   </Col>
               </Row>
-        </Container>
+          </Container>
+          <Footer/>
       </>
   )
 }
